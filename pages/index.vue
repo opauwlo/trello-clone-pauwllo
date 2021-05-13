@@ -88,10 +88,10 @@
         v-for="board in boards"
         v-bind:key="board.id"
       >
-        <v-card-title :style="board.image.downloadURL != '' ? 'color:#fff':''">
+        <v-card-title :style="board.image.downloadURL != '' ? 'color:#000':''">
           {{ board.title }}
         </v-card-title>
-        <v-card-subtitle :style="board.image.downloadURL != '' ? 'color:#fff':''">
+        <v-card-subtitle :style="board.image.downloadURL != '' ? 'color:#000':''">
           created {{ board.dateCreated | formatDate }}
         </v-card-subtitle>
       </v-card>

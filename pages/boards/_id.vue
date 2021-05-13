@@ -184,13 +184,13 @@
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn color="red darken-1" text @click="deleteCard()">
-              Delete
+              Deletar
             </v-btn>
             <v-btn color="blue darken-1" text @click="dialogEditCard = false">
-              Close
+              Fechar
             </v-btn>
             <v-btn color="blue darken-1" text @click="updateCard()">
-              Save
+              Salvar
             </v-btn>
           </v-card-actions>
         </v-card>

@@ -47,12 +47,12 @@
                   </div>
                   <div class="d-flex">
                     <nuxt-link to="/">
-                      <v-icon>mdi-view-dashboard-variant-outline</v-icon>&nbsp;&nbsp;<b>My Boards</b>
+                      <v-icon>mdi-view-dashboard-variant-outline</v-icon>&nbsp;&nbsp;<b>Minhas Boards</b>
                     </nuxt-link>
                   </div>
                   <div class="d-flex">
                     <nuxt-link to="/auth/signout">
-                      <v-icon>mdi-exit-to-app</v-icon>&nbsp;&nbsp;<b>Sign out</b>
+                      <v-icon>mdi-exit-to-app</v-icon>&nbsp;&nbsp;<b>Sair</b>
                     </nuxt-link>
                   </div>
                 </div>
