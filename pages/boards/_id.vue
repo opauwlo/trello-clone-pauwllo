@@ -15,7 +15,7 @@
           <v-icon @click="drawer = true">mdi-menu</v-icon>
           <nuxt-link to="/">
             <v-row no-gutters align="center" justify="space-between">
-              <h3 class="logo">Jello</h3>
+              <h3 class="logo">puawllo</h3>
             </v-row>
           </nuxt-link>
           <v-icon small @click="deleteBoard()">mdi-delete-outline</v-icon>
@@ -33,7 +33,7 @@
 
             <v-row no-gutters align="center" justify="end">
               <p class="jello-user">
-                Signed in as<br />
+                Logado Como<br />
                 {{ $nuxt.$fire.auth.currentUser.email }}
               </p>
               &nbsp;
@@ -49,12 +49,12 @@
             <div class="d-flex">
               <nuxt-link to="/">
                 <v-icon>mdi-view-dashboard-variant-outline</v-icon
-                >&nbsp;&nbsp;<b>My Boards</b>
+                >&nbsp;&nbsp;<b>Minhas Boards</b>
               </nuxt-link>
             </div>
             <div class="d-flex">
               <nuxt-link to="/auth/signout">
-                <v-icon>mdi-exit-to-app</v-icon>&nbsp;&nbsp;<b>Sign out</b>
+                <v-icon>mdi-exit-to-app</v-icon>&nbsp;&nbsp;<b>Sair</b>
               </nuxt-link>
             </div>
           </div>
@@ -62,7 +62,7 @@
       </v-navigation-drawer>
     </div>
     <h1>{{ board.title }}</h1>
-    <small>created {{ board.dateCreated | formatDate }}</small>
+    <small>criado {{ board.dateCreated | formatDate }}</small>
     <div class="d-flex flex-row pr-6 pt-3">
        <div
         v-for="list in board.lists"
@@ -88,8 +88,8 @@
         >
           <v-card-text> {{ card.title }} </v-card-text>
         </v-card>
-        
-        
+
+
         <v-btn
           depressed
           @click="
@@ -103,7 +103,7 @@
        <v-dialog v-model="dialogCard" persistent max-width="600px">
         <v-card elevation="0">
           <v-card-title>
-            <span class="headline">Card name</span>
+            <span class="headline">Nome do Card</span>
           </v-card-title>
           <v-card-text>
             <v-container>
@@ -121,22 +121,22 @@
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn color="blue darken-1" text @click="dialogCard = false">
-              Close
+              Fechar
             </v-btn>
             <v-btn color="blue darken-1" text @click="createCard()">
-              Save
+              Salvar
             </v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
       <div class="d-flex flex-row">
         <v-btn depressed @click="dialog = true" class="create-list"
-          >Create new list</v-btn
+          >Criar Nova Lista</v-btn
         >
         <v-dialog v-model="dialog" persistent max-width="600px">
           <v-card elevation="0">
             <v-card-title>
-              <span class="headline">List name</span>
+              <span class="headline">Lista</span>
             </v-card-title>
             <v-card-text>
               <v-container>
@@ -430,7 +430,7 @@ export default {
         .doc(that.board.id).delete().then(() => {
           $nuxt.$router.push('/')
         }).catch(() => {
-          
+
         })
       } catch (error) {
         $nuxt.$router.push('/')

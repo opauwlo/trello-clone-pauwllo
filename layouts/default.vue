@@ -18,7 +18,7 @@
                 <v-row no-gutters align="center" justify="center">
                   <nuxt-link to="/">
                     <v-row no-gutters align="center" justify="center">
-                      <h3 class="logo">Jello</h3>
+                      <h3 class="logo">pauwllo</h3>
                     </v-row>
                   </nuxt-link>
                 </v-row>
@@ -30,8 +30,8 @@
                 <v-row no-gutters align="center" justify="space-between">
                   <v-icon @click="drawer = false">mdi-close</v-icon>
 
-                    <v-row no-gutters align="center" justify="end"> 
-                        <p class="jello-user">Signed in as<br>
+                    <v-row no-gutters align="center" justify="end">
+                        <p class="jello-user">Logado como<br>
                         {{ $nuxt.$fire.auth.currentUser.email }}</p>
                         &nbsp;
                          <v-icon>mdi-account-circle-outline</v-icon>
@@ -43,7 +43,7 @@
                 <div class="d-flex flex-column">
                   <div class="d-flex">
                     <br />
-                    
+
                   </div>
                   <div class="d-flex">
                     <nuxt-link to="/">

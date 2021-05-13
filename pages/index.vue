@@ -4,26 +4,26 @@
       <v-container class="d-block">
         <v-row no-gutters align="center" justify="space-between">
           <v-row no-gutters>
-            <h3>Add Board</h3>
+            <h3>Adicionar Board</h3>
           </v-row>
           <v-icon @click="dialog = false">mdi-close</v-icon>
         </v-row>
         <v-form ref="form" v-model="valid">
           <div class="d-flex flex-column">
             <v-text-field
-              label="Board title"
+              label="Titulo da sua board"
               name="title"
               type="text"
-              :rules="[(v) => !!v || 'Board title is required']"
+              :rules="[(v) => !!v || 'Titulo é obrigatorio']"
               required
               v-model="board.title"
             ></v-text-field>
             <v-btn v-if="enableColor === false" depressed @click="enableColor = true">
-              Choose board color
+              Escolha Sua Cor
             </v-btn>
             <br>
             <v-color-picker
-           
+
              v-if="enableColor === true"
              v-model="board.color"
               dot-size="25"
@@ -41,7 +41,7 @@
                 v-if="!fileToUpload.progress || fileToUpload.progress == 0"
               >
                 <v-icon>mdi-camera</v-icon>
-                <p>Add a board background</p>
+                <p>Adicionar uma imagem de fundo</p>
                 <input
                   type="file"
                   accept="jpg, jpeg, png"
@@ -69,7 +69,7 @@
               </template>
             </div>
             <v-btn :disabled="!valid" color="primary" @click="createBoard"
-              >Submit</v-btn
+              >Ir</v-btn
             >
           </div>
         </v-form>
@@ -77,10 +77,10 @@
     </v-dialog>
     <div class="d-flex flex-row align-center justify-space-between">
       <h1>My Boards</h1>
-      <v-btn small depressed @click="addBoard">ADD BOARD</v-btn>
+      <v-btn small depressed @click="addBoard">ADICIONAR BOARD</v-btn>
     </div>
     <div class="d-flex flex-wrap align-center justify-start">
-      <p v-if="boards.length === 0">You have no boards yet.</p>
+      <p v-if="boards.length === 0">Você não tem boards.</p>
       <v-card
         :style="board.image.downloadURL != '' ? `background:url(${board.image.downloadURL});`: board.color ? `background-color:${board.color}` : ''"
         @click="$router.push('/boards/' + board.id)"
@@ -199,7 +199,7 @@ export default {
           .catch(function (error) {})
       }
     },
-    
+
     chooseImage() {
       this.$refs['boardBackground'].click()
     },
