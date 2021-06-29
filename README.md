@@ -1,3 +1,32 @@
+# Trello clone
+
+---
+
+  
+## 📋 Description
+
+### Hi!
+
+#### Just trying look Veu.js, this clone was made watching one tutorial and veu is cool.
+
+---
+
+
+## 🖥️ Technologies
+
+- JS
+- VEU
+- SAAS
+
+## 🎨 Projects
+
+*✓ Finished*
+
+
+
+---
+
+
 # trello-clone
 
 ## Build Setup
