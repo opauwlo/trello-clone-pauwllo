@@ -22,12 +22,8 @@
 
 *✓ Finished*
 
-
-
 ---
 
-
-# trello-clone
 
 ## Build Setup
 
